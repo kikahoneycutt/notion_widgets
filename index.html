@@ -46,12 +46,7 @@ h1 {
     width: 85vw;
     color: #000;
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #D9D0A3;
-}
-
-.card:hover {
-    margin-top: 0px;
-    box-shadow: none;
+    box-shadow: 0px 0px 0px 0px #D9D0A3;
 }
 
 .clock {
@@ -101,8 +96,8 @@ h1 {
         <div class="time" id="hour"></div>
         <div class="colon">:</div>
         <div class="time" id="min"></div>
-        <div class="colon">:</div>
-        <div class="time" id="sec"></div>
+        <!-- <div class="colon">:</div>
+        <div class="time" id="sec"></div> -->
       </div>
     </div>
     
@@ -138,7 +133,7 @@ if (hrs < 12)
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
 document.getElementById('min').innerHTML = minutes;
-document.getElementById('sec').innerHTML = seconds;
+//document.getElementById('sec').innerHTML = seconds;
 }
 
 function twelveHour(hour) {
